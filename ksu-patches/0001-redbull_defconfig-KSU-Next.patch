@@ -1,0 +1,14 @@
+diff --git a/arch/arm64/configs/redbull_defconfig b/arch/arm64/configs/redbull_defconfig
+index 4b6e9a06a042..2ef6211a127e 100644
+--- a/arch/arm64/configs/redbull_defconfig
++++ b/arch/arm64/configs/redbull_defconfig
+@@ -727,3 +727,9 @@ CONFIG_PANIC_ON_DATA_CORRUPTION=y
+ CONFIG_CC_WERROR=y
+ CONFIG_PID_IN_CONTEXTIDR=y
+ CONFIG_ARM64_STRICT_BREAK_BEFORE_MAKE=y
++# KSU-Next (manual hook)
++CONFIG_KSU=y
++CONFIG_KSU_MANUAL_HOOK=y
++# KPatch-Next
++CONFIG_KALLSYMS_ALL=y
++CONFIG_KALLSYMS=y

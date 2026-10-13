@@ -35,7 +35,7 @@ git clean -q -ffdx
 
 # 2. Add KernelSU-Next (legacy)
 log "running KernelSU-Next setup.sh"
-curl -LSs "$SETUP_URL" | bash -s 3ade559
+curl -LSs "$SETUP_URL" | bash -s bda55da
 [ -L drivers/kernelsu ] || { log "setup.sh did not create drivers/kernelsu"; exit 1; }
 git -C KernelSU-Next log -1 --format='>> [ksu] KernelSU-Next at %h (%cd) %s'
 
